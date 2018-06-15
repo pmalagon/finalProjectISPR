@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Apr 29 20:42:00 2018
+# Process ID: 5352
+# Current directory: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/hdmi_out_v_axi4s_vid_out_0_0_synth_1
+# Command line: vivado.exe -log hdmi_out_v_axi4s_vid_out_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_out_v_axi4s_vid_out_0_0.tcl
+# Log file: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/hdmi_out_v_axi4s_vid_out_0_0_synth_1/hdmi_out_v_axi4s_vid_out_0_0.vds
+# Journal file: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/hdmi_out_v_axi4s_vid_out_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source hdmi_out_v_axi4s_vid_out_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 344.754 ; gain = 82.453
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_v_axi4s_vid_out_0_0' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ip/hdmi_out_v_axi4s_vid_out_0_0/synth/hdmi_out_v_axi4s_vid_out_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'v_axi4s_vid_out_v4_0_6' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2283]
+INFO: [Synth 8-638] synthesizing module 'v_axi4s_vid_out_v4_0_6_coupler' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:538]
+INFO: [Synth 8-638] synthesizing module 'v_axi4s_vid_out_v4_0_6_fifo' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:59]
+INFO: [Synth 8-256] done synthesizing module 'v_axi4s_vid_out_v4_0_6_fifo' (31#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:59]
+INFO: [Synth 8-256] done synthesizing module 'v_axi4s_vid_out_v4_0_6_coupler' (32#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:538]
+INFO: [Synth 8-638] synthesizing module 'v_axi4s_vid_out_v4_0_6_sync' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:724]
+INFO: [Synth 8-256] done synthesizing module 'v_axi4s_vid_out_v4_0_6_sync' (33#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:724]
+INFO: [Synth 8-638] synthesizing module 'v_axi4s_vid_out_v4_0_6_formatter' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:1355]
+INFO: [Synth 8-256] done synthesizing module 'v_axi4s_vid_out_v4_0_6_formatter' (34#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:1355]
+INFO: [Synth 8-256] done synthesizing module 'v_axi4s_vid_out_v4_0_6' (35#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6e4e/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v:2283]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_out_v_axi4s_vid_out_0_0' (36#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ip/hdmi_out_v_axi4s_vid_out_0_0/synth/hdmi_out_v_axi4s_vid_out_0_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 562.578 ; gain = 300.277
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 562.578 ; gain = 300.277
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 658.559 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 658.559 ; gain = 396.258
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 658.559 ; gain = 396.258
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 658.559 ; gain = 396.258
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 658.559 ; gain = 396.258
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 658.559 ; gain = 396.258
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 659.734 ; gain = 397.434
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:35 . Memory (MB): peak = 661.738 ; gain = 399.438
+Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:35 . Memory (MB): peak = 681.027 ; gain = 418.727
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 681.027 ; gain = 418.727
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:36 . Memory (MB): peak = 681.027 ; gain = 418.727
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 681.027 ; gain = 418.727
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 681.027 ; gain = 418.727
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 681.027 ; gain = 418.727
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 681.027 ; gain = 418.727
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    33|
+|2     |LUT1     |    96|
+|3     |LUT2     |    58|
+|4     |LUT3     |    33|
+|5     |LUT4     |    67|
+|6     |LUT5     |    30|
+|7     |LUT6     |    52|
+|8     |MUXCY    |    24|
+|9     |MUXF7    |     2|
+|10    |RAMB36E1 |     3|
+|11    |FDCE     |   167|
+|12    |FDPE     |    27|
+|13    |FDRE     |   182|
+|14    |FDSE     |     2|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 681.027 ; gain = 418.727
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:39 . Memory (MB): peak = 683.465 ; gain = 425.797

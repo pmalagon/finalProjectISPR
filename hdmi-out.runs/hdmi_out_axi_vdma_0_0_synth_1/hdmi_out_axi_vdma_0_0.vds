@@ -1,0 +1,179 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Apr 29 20:37:29 2018
+# Process ID: 6904
+# Current directory: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/hdmi_out_axi_vdma_0_0_synth_1
+# Command line: vivado.exe -log hdmi_out_axi_vdma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_out_axi_vdma_0_0.tcl
+# Log file: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/hdmi_out_axi_vdma_0_0_synth_1/hdmi_out_axi_vdma_0_0.vds
+# Journal file: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/hdmi_out_axi_vdma_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source hdmi_out_axi_vdma_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 351.086 ; gain = 81.648
+INFO: [Synth 8-638] synthesizing module 'hdmi_out_axi_vdma_0_0' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ip/hdmi_out_axi_vdma_0_0/synth/hdmi_out_axi_vdma_0_0.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:69480]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_rst_module' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:16457]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reset' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:14862]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (1#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (1#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reset' (2#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:14862]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_rst_module' (3#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:16457]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_if' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:39644]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_lite_if' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:16952]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (3#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_lite_if' (4#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:16952]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (4#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_if' (5#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:39644]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_intrpt' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:40370]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_intrpt' (6#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:40370]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:38829]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_register' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:18712]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register' (7#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:18712]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:20526]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect' (8#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:20526]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:29591]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux' (9#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:29591]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module' (10#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:38829]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:63815]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:61558]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm' (11#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:61558]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:62697]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if' (12#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:62697]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sts_mngr' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:63204]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sts_mngr' (13#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:63204]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vidreg_module' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:55739]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vregister' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:53625]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vregister' (14#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:53625]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vaddrreg_mux' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:55216]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vaddrreg_mux' (15#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:55216]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vidreg_module' (16#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:55739]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:58282]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:57995]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder' (17#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:57995]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr' (18#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:58282]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr' (19#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:63815]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:52754]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen' (20#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:52754]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vid_cdc' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:13249]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vid_cdc' (21#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:13249]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sof_gen' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:40980]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sof_gen' (22#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:40980]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mm2s_linebuf' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:45948]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_afifo_builtin' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:43237]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_afifo_builtin' (33#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:43237]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:41227]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf' (34#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:41227]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized3' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized3' (34#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mm2s_linebuf' (35#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:45948]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55410]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53548]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (36#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (37#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (38#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (39#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (40#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (41#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (41#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (41#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (41#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (41#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (42#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13741]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (43#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:13741]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (44#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (44#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (45#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (45#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (45#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (45#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (45#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (46#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12180]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10676]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (47#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:10676]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (47#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (47#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (47#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (47#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (48#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:12180]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_sf' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:20200]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (72#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (73#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_sf' (74#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:20200]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (75#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:53548]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_omit_wrap' [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49590]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_omit_wrap' (76#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:49590]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (77#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/43a6/hdl/axi_datamover_v5_1_vh_rfs.vhd:55410]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (78#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ipshared/450f/hdl/axi_vdma_v6_3_rfs.vhd:69480]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_out_axi_vdma_0_0' (79#1) [c:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ip/hdmi_out_axi_vdma_0_0/synth/hdmi_out_axi_vdma_0_0.vhd:105]
+Finished RTL Elaboration : Time (s): cpu = 00:04:47 ; elapsed = 00:05:07 . Memory (MB): peak = 623.324 ; gain = 353.887
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:48 ; elapsed = 00:05:07 . Memory (MB): peak = 623.324 ; gain = 353.887
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 735.117 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:05:01 ; elapsed = 00:05:23 . Memory (MB): peak = 735.117 ; gain = 465.680
+Finished Loading Part and Timing Information : Time (s): cpu = 00:05:01 ; elapsed = 00:05:23 . Memory (MB): peak = 735.117 ; gain = 465.680
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:05:01 ; elapsed = 00:05:23 . Memory (MB): peak = 735.117 ; gain = 465.680
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:05:05 ; elapsed = 00:05:26 . Memory (MB): peak = 735.117 ; gain = 465.680
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:10 ; elapsed = 00:05:32 . Memory (MB): peak = 735.117 ; gain = 465.680
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:23 ; elapsed = 00:05:46 . Memory (MB): peak = 735.117 ; gain = 465.680
+Finished Timing Optimization : Time (s): cpu = 00:05:26 ; elapsed = 00:05:50 . Memory (MB): peak = 776.883 ; gain = 507.445
+Finished Technology Mapping : Time (s): cpu = 00:05:27 ; elapsed = 00:05:51 . Memory (MB): peak = 776.883 ; gain = 507.445
+Finished IO Insertion : Time (s): cpu = 00:05:28 ; elapsed = 00:05:52 . Memory (MB): peak = 776.883 ; gain = 507.445
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:28 ; elapsed = 00:05:52 . Memory (MB): peak = 776.883 ; gain = 507.445
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:29 ; elapsed = 00:05:52 . Memory (MB): peak = 776.883 ; gain = 507.445
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:29 ; elapsed = 00:05:52 . Memory (MB): peak = 776.883 ; gain = 507.445
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:29 ; elapsed = 00:05:52 . Memory (MB): peak = 776.883 ; gain = 507.445
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:29 ; elapsed = 00:05:52 . Memory (MB): peak = 776.883 ; gain = 507.445
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    32|
+|2     |FIFO36E1 |     4|
+|3     |LUT1     |   202|
+|4     |LUT2     |   153|
+|5     |LUT3     |   210|
+|6     |LUT4     |   150|
+|7     |LUT5     |   174|
+|8     |LUT6     |   257|
+|9     |RAMB36E1 |     1|
+|10    |SRL16E   |   105|
+|11    |FDPE     |     5|
+|12    |FDR      |   133|
+|13    |FDRE     |  1291|
+|14    |FDSE     |    42|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:29 ; elapsed = 00:05:52 . Memory (MB): peak = 776.883 ; gain = 507.445
+synth_design: Time (s): cpu = 00:05:31 ; elapsed = 00:05:56 . Memory (MB): peak = 776.883 ; gain = 515.207

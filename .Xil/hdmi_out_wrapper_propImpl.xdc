@@ -1,0 +1,18 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/fpga/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ip/hdmi_out_processing_system7_0_0/hdmi_out_processing_system7_0_0.xdc rfile:../../src/bd/hdmi_out/ip/hdmi_out_processing_system7_0_0/hdmi_out_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:hdmi_out_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/fpga/Desktop/Zybo-hdmi-out/proj/hdmi-out.srcs/constrs_1/new/constrains.xdc rfile:../hdmi-out.srcs/constrs_1/new/constrains.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/fpga/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ip/hdmi_out_v_axi4s_vid_out_0_0/hdmi_out_v_axi4s_vid_out_0_0_clocks.xdc rfile:../../src/bd/hdmi_out/ip/hdmi_out_v_axi4s_vid_out_0_0/hdmi_out_v_axi4s_vid_out_0_0_clocks.xdc id:3 order:LATE scoped_inst:hdmi_out_i/v_axi4s_vid_out_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/fpga/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/ip/hdmi_out_v_tc_0_0/hdmi_out_v_tc_0_0_clocks.xdc rfile:../../src/bd/hdmi_out/ip/hdmi_out_v_tc_0_0/hdmi_out_v_tc_0_0_clocks.xdc id:4 order:LATE scoped_inst:hdmi_out_i/v_tc_0/U0} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter clk_fpga_0 0.3
+set_property src_info {type:SCOPED_XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter clk_fpga_1 0.21
+set_property src_info {type:XDC file:2 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property LOC XADC_X0Y0 [get_cells hdmi_out_i/xadc_wiz_0/U0/AXI_XADC_CORE_I/XADC_INST]
+set_property src_info {type:SCOPED_XDC file:3 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_max_delay -from [get_cells COUPLER_INST/FIFO_INST/FIFO_INST/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*rd_pntr_gc_reg[*]] -to [get_cells COUPLER_INST/FIFO_INST/FIFO_INST/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*gsync_stage[*].wr_stg_inst/Q_reg_reg[*]] -datapath_only [get_property -min PERIOD [get_clocks -of_objects [get_pins hdmi_out_i/v_axi4s_vid_out_0/inst/vid_io_out_clk]]]
+set_property src_info {type:SCOPED_XDC file:3 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_max_delay -from [get_cells COUPLER_INST/FIFO_INST/FIFO_INST/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*wr_pntr_gc_reg[*]] -to [get_cells COUPLER_INST/FIFO_INST/FIFO_INST/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/*gsync_stage[*].rd_stg_inst/Q_reg_reg[*]] -datapath_only [get_property -min PERIOD [get_clocks -of_objects [get_pins hdmi_out_i/v_axi4s_vid_out_0/inst/aclk]]]
+set_property src_info {type:SCOPED_XDC file:4 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_max_delay -from [get_clocks -of_objects [get_pins hdmi_out_i/v_tc_0/U0/clk]] -to [all_registers -clock [get_clocks -of_objects [get_pins hdmi_out_i/v_tc_0/U0/s_axi_aclk]]] -datapath_only [get_property -min PERIOD [get_clocks -of_objects [get_pins hdmi_out_i/v_tc_0/U0/clk]]]
+set_property src_info {type:SCOPED_XDC file:4 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_max_delay -from [get_clocks -of_objects [get_pins hdmi_out_i/v_tc_0/U0/s_axi_aclk]] -to [all_registers -clock [get_clocks -of_objects [get_pins hdmi_out_i/v_tc_0/U0/clk]]] -datapath_only [get_property -min PERIOD [get_clocks -of_objects [get_pins hdmi_out_i/v_tc_0/U0/s_axi_aclk]]]

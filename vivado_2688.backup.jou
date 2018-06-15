@@ -1,0 +1,199 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Apr 30 19:44:41 2018
+# Process ID: 2688
+# Current directory: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9028 C:\Users\Ilde\Desktop\Zybo-hdmi-out\proj\hdmi-out.xpr
+# Log file: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/vivado.log
+# Journal file: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.xpr
+open_bd_design {C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd}
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xadc_wiz:3.3 xadc_wiz_0
+endgroup
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.OT_ALARM {false} CONFIG.USER_TEMP_ALARM {false} CONFIG.VCCINT_ALARM {false} CONFIG.VCCAUX_ALARM {false} CONFIG.ENABLE_VCCPINT_ALARM {false} CONFIG.ENABLE_VCCPAUX_ALARM {false} CONFIG.ENABLE_VCCDDRO_ALARM {false} CONFIG.SINGLE_CHANNEL_SELECTION {VAUXP14_VAUXN14} CONFIG.CHANNEL_AVERAGING {16} CONFIG.SENSOR_OFFSET_AND_GAIN_CALIBRATION {false}] [get_bd_cells xadc_wiz_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" intc_ip "/processing_system7_0_axi_periph" Clk_xbar "Auto" Clk_master "Auto" Clk_slave "Auto" }  [get_bd_intf_pins xadc_wiz_0/s_axi_lite]
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+reset_run hdmi_out_xbar_0_synth_1
+launch_runs hdmi_out_xbar_0_synth_1
+wait_on_run hdmi_out_xbar_0_synth_1
+generate_target all [get_files C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+launch_runs hdmi_out_xadc_wiz_0_0_synth_1
+wait_on_run hdmi_out_xadc_wiz_0_0_synth_1
+launch_runs hdmi_out_auto_pc_1_synth_1
+wait_on_run hdmi_out_auto_pc_1_synth_1
+launch_runs hdmi_out_s00_regslice_0_synth_1
+wait_on_run hdmi_out_s00_regslice_0_synth_1
+launch_runs hdmi_out_s00_data_fifo_0_synth_1
+wait_on_run hdmi_out_s00_data_fifo_0_synth_1
+launch_runs hdmi_out_auto_pc_0_synth_1
+wait_on_run hdmi_out_auto_pc_0_synth_1
+synth_design -rtl -name rtl_1
+open_bd_design {C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd}
+startgroup
+endgroup
+startgroup
+create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux14
+connect_bd_intf_net [get_bd_intf_pins xadc_wiz_0/Vaux14] [get_bd_intf_ports Vaux14]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+generate_target all [get_files C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+launch_runs hdmi_out_auto_pc_1_synth_1
+wait_on_run hdmi_out_auto_pc_1_synth_1
+launch_runs hdmi_out_s00_regslice_0_synth_1
+wait_on_run hdmi_out_s00_regslice_0_synth_1
+launch_runs hdmi_out_s00_data_fifo_0_synth_1
+wait_on_run hdmi_out_s00_data_fifo_0_synth_1
+launch_runs hdmi_out_auto_pc_0_synth_1
+wait_on_run hdmi_out_auto_pc_0_synth_1
+refresh_design
+place_ports Vaux14_v_n N16
+file mkdir C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.srcs/constrs_1/new
+close [ open C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.srcs/constrs_1/new/constrains.xdc w ]
+add_files -fileset constrs_1 C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.srcs/constrs_1/new/constrains.xdc
+set_property target_constrs_file C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.srcs/constrs_1/new/constrains.xdc [current_fileset -constrset]
+save_constraints -force
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list Vaux14_v_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Vaux14_v_p]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list Vaux14_v_p]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list Vaux14_v_n]]
+open_bd_design {C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd}
+delete_bd_objs [get_bd_intf_nets Vaux14_1] [get_bd_intf_ports Vaux14]
+startgroup
+set_property -dict [list CONFIG.SINGLE_CHANNEL_SELECTION {VAUXP7_VAUXN7}] [get_bd_cells xadc_wiz_0]
+endgroup
+startgroup
+create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux7
+connect_bd_intf_net [get_bd_intf_pins xadc_wiz_0/Vaux7] [get_bd_intf_ports Vaux7]
+endgroup
+save_bd_design
+reset_run hdmi_out_xadc_wiz_0_0_synth_1
+launch_runs hdmi_out_xadc_wiz_0_0_synth_1
+wait_on_run hdmi_out_xadc_wiz_0_0_synth_1
+generate_target all [get_files C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+launch_runs hdmi_out_auto_pc_1_synth_1
+wait_on_run hdmi_out_auto_pc_1_synth_1
+launch_runs hdmi_out_s00_regslice_0_synth_1
+wait_on_run hdmi_out_s00_regslice_0_synth_1
+launch_runs hdmi_out_s00_data_fifo_0_synth_1
+wait_on_run hdmi_out_s00_data_fifo_0_synth_1
+launch_runs hdmi_out_auto_pc_0_synth_1
+wait_on_run hdmi_out_auto_pc_0_synth_1
+refresh_design
+place_ports Vaux7_v_n L15
+open_bd_design {C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd}
+delete_bd_objs [get_bd_intf_nets Vaux7_1] [get_bd_intf_ports Vaux7]
+startgroup
+set_property -dict [list CONFIG.SINGLE_CHANNEL_SELECTION {VAUXP15_VAUXN15}] [get_bd_cells xadc_wiz_0]
+endgroup
+startgroup
+create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux15
+connect_bd_intf_net [get_bd_intf_pins xadc_wiz_0/Vaux15] [get_bd_intf_ports Vaux15]
+endgroup
+save_bd_design
+reset_run hdmi_out_xadc_wiz_0_0_synth_1
+launch_runs hdmi_out_xadc_wiz_0_0_synth_1
+wait_on_run hdmi_out_xadc_wiz_0_0_synth_1
+generate_target all [get_files C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+launch_runs hdmi_out_auto_pc_1_synth_1
+wait_on_run hdmi_out_auto_pc_1_synth_1
+launch_runs hdmi_out_s00_regslice_0_synth_1
+wait_on_run hdmi_out_s00_regslice_0_synth_1
+launch_runs hdmi_out_s00_data_fifo_0_synth_1
+wait_on_run hdmi_out_s00_data_fifo_0_synth_1
+launch_runs hdmi_out_auto_pc_0_synth_1
+wait_on_run hdmi_out_auto_pc_0_synth_1
+refresh_design
+place_ports Vaux15_v_n J16
+open_bd_design {C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd}
+delete_bd_objs [get_bd_intf_nets Vaux15_1] [get_bd_intf_ports Vaux15]
+startgroup
+set_property -dict [list CONFIG.SINGLE_CHANNEL_SELECTION {VAUXP6_VAUXN6}] [get_bd_cells xadc_wiz_0]
+endgroup
+save_bd_design
+reset_run hdmi_out_xadc_wiz_0_0_synth_1
+launch_runs hdmi_out_xadc_wiz_0_0_synth_1
+wait_on_run hdmi_out_xadc_wiz_0_0_synth_1
+generate_target all [get_files C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+launch_runs hdmi_out_auto_pc_1_synth_1
+wait_on_run hdmi_out_auto_pc_1_synth_1
+launch_runs hdmi_out_s00_regslice_0_synth_1
+wait_on_run hdmi_out_s00_regslice_0_synth_1
+launch_runs hdmi_out_s00_data_fifo_0_synth_1
+wait_on_run hdmi_out_s00_data_fifo_0_synth_1
+launch_runs hdmi_out_auto_pc_0_synth_1
+wait_on_run hdmi_out_auto_pc_0_synth_1
+refresh_design
+open_bd_design {C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd}
+startgroup
+create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux6
+connect_bd_intf_net [get_bd_intf_pins xadc_wiz_0/Vaux6] [get_bd_intf_ports Vaux6]
+endgroup
+save_bd_design
+open_bd_design {C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd}
+generate_target all [get_files C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+launch_runs hdmi_out_auto_pc_1_synth_1
+wait_on_run hdmi_out_auto_pc_1_synth_1
+launch_runs hdmi_out_s00_regslice_0_synth_1
+wait_on_run hdmi_out_s00_regslice_0_synth_1
+launch_runs hdmi_out_s00_data_fifo_0_synth_1
+wait_on_run hdmi_out_s00_data_fifo_0_synth_1
+launch_runs hdmi_out_auto_pc_0_synth_1
+wait_on_run hdmi_out_auto_pc_0_synth_1
+refresh_design
+place_ports Vaux6_v_n J14
+open_bd_design {C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd}
+delete_bd_objs [get_bd_intf_nets Vaux6_1] [get_bd_intf_ports Vaux6]
+startgroup
+set_property -dict [list CONFIG.SINGLE_CHANNEL_SELECTION {VAUXP14_VAUXN14}] [get_bd_cells xadc_wiz_0]
+endgroup
+startgroup
+create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 Vaux14
+connect_bd_intf_net [get_bd_intf_pins xadc_wiz_0/Vaux14] [get_bd_intf_ports Vaux14]
+endgroup
+save_bd_design
+reset_run hdmi_out_xadc_wiz_0_0_synth_1
+launch_runs hdmi_out_xadc_wiz_0_0_synth_1
+wait_on_run hdmi_out_xadc_wiz_0_0_synth_1
+generate_target all [get_files C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Ilde/Desktop/Zybo-hdmi-out/src/bd/hdmi_out/hdmi_out.bd]
+launch_runs hdmi_out_auto_pc_1_synth_1
+wait_on_run hdmi_out_auto_pc_1_synth_1
+launch_runs hdmi_out_s00_regslice_0_synth_1
+wait_on_run hdmi_out_s00_regslice_0_synth_1
+launch_runs hdmi_out_s00_data_fifo_0_synth_1
+wait_on_run hdmi_out_s00_data_fifo_0_synth_1
+launch_runs hdmi_out_auto_pc_0_synth_1
+wait_on_run hdmi_out_auto_pc_0_synth_1
+refresh_design
+reset_run synth_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list Vaux14_v_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Vaux14_v_p]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {HDMI_OEN[0]}]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/impl_1/hdmi_out_wrapper.sysdef C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.sdk/hdmi_out_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.sdk -hwspec C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.sdk/hdmi_out_wrapper.hdf

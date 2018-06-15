@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Jun 13 04:42:17 2018
+# Process ID: 1964
+# Current directory: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/hdmi_out_rgb2dvi_0_0_synth_1
+# Command line: vivado.exe -log hdmi_out_rgb2dvi_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_out_rgb2dvi_0_0.tcl
+# Log file: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/hdmi_out_rgb2dvi_0_0_synth_1/hdmi_out_rgb2dvi_0_0.vds
+# Journal file: C:/Users/Ilde/Desktop/Zybo-hdmi-out/proj/hdmi-out.runs/hdmi_out_rgb2dvi_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source hdmi_out_rgb2dvi_0_0.tcl -notrace
